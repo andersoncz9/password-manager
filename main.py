@@ -1,4 +1,5 @@
 from tkinter import *
+<<<<<<< HEAD
 import random
 
 
@@ -81,5 +82,17 @@ generate_button.grid(column=2, row=3, sticky="w", padx=(5, 0))
 # Botão Add
 add_button = Button(text="Add", width=36, command=SavePassword)
 add_button.grid(column=0, row=4, columnspan=4, pady=15)
+=======
+
+window = Tk()
+window.title("Password Manager")
+
+
+
+
+
+
+
+>>>>>>> bef1b4bdc9316d36fadd123ef192d2f09d01abd6
 
 window.mainloop()
