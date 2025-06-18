@@ -26,7 +26,7 @@ def SavePassword():
     elif len(password_entry.get()) < 8:
         popupInfo("Password should be at least 8 characteres long.\n Try using the generate password button.")
     else:
-        with open(r"D:/ADS/python/Password Manager/passwords.txt", "a") as doc: 
+        with open("passwords.txt", "a") as doc: 
             doc.write(f"{website_entry.get()} | {email_entry.get()} | {password_entry.get()}\n")
         popupInfo("Password Saved")
         website_entry.delete(0, END)
@@ -54,7 +54,7 @@ window.grid_columnconfigure(2, weight=1)
 
 # Logo
 canvas = Canvas(height=200, width=200, highlightthickness=0)
-logo = PhotoImage(file="D:/ADS/python/Password Manager/logo.png")
+logo = PhotoImage(file="logo.png")
 canvas.create_image(100, 100, image=logo)
 canvas.grid(column=1, row=0, columnspan=1, pady=(0, 20))
 
